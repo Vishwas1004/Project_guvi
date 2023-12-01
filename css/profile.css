@@ -1,0 +1,111 @@
+/* Add your existing CSS styles here */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+span {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+/* Reset some default styles */
+body, h2, label, span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Apply a background color to the body */
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+}
+
+/* Style the header h2 */
+header h2 {
+    margin: 0;
+}
+
+/* Style the logout button */
+header button {
+    background-color: #fff;
+    color: #007bff;
+    padding: 8px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Center the container horizontally */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the profile items */
+.container div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Style the labels */
+label {
+    color: #007bff;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Style the spans */
+span {
+    flex: 1;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+/* Additional styles based on your design preferences */
+/* Feel free to modify or add styles according to your needs */

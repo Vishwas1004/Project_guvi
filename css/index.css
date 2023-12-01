@@ -1,0 +1,92 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+p,
+a,
+input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Apply a background color to the body */
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Center the container horizontally */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the image */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Additional styles for the header */
+header {
+    background-color: rgb(241, 186, 66);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+}
+
+
+header a:hover {
+    color: #0056b3;
+}
+
+/* Additional styles for the header title */
+header h2 {
+    margin: 20px;
+    font-size: 24px;
+    color: #0f0f0f;
+}
+header button {
+    color: #0e0e0f;
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 10px 15px;
+    border: 2px solid #0f0f0f;
+    border-radius: 23px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+header button:hover {
+    background-color: rgb(250, 236, 197);
+}
+
+
+/* Add some padding to the container on smaller screens */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header a {
+        margin: 0;
+    }
+}
