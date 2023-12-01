@@ -1,27 +1,23 @@
 function login() {
-    // Validate form fields
     var formData = {
         email: document.getElementById('email').value,
         password: document.getElementById('password').value
     };
 
-    // Perform client-side validation
     if (!validateForm(formData)) {
         return;
     }
 
-    // Send data to the server using fetch
     fetch('/guvi_project_vishwas/php/login.php', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json', // Change content type to JSON
+            'Content-Type': 'application/json', 
         },
-        body: JSON.stringify(formData), // Convert data to JSON format
+        body: JSON.stringify(formData), 
     })
         .then(response => response.json())
         .then(data => {
             if (data.status === 'success') {
-                // Store the username in localStorage
                 localStorage.setItem('userEmail', formData.email);
                 window.location.href = 'profile.html';
             } else {
@@ -33,7 +29,6 @@ function login() {
         });
 }
 
-// Function to perform client-side validation
 function validateForm(formData) {
     for (var key in formData) {
         if (!formData[key]) {

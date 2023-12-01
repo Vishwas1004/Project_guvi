@@ -1,3 +1,4 @@
+
 body,
 h1,
 h2,
@@ -7,18 +8,17 @@ input {
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
 
-/* Apply a background color to the body */
 body {
     background-color: #f4f4f4;
     font-family: 'Arial', sans-serif;
 }
 
-/* Center the container horizontally */
 .container {
-    max-width: 400px;
-    margin: 100px auto;
+    max-width: 600px;
+    margin: 50px auto;
     padding: 20px;
     background-color: #fff;
     border: 1px solid #ccc;
@@ -26,15 +26,35 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Style the form */
-form {
-    margin: 40px 20px 0 20px;
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 h2 {
     color: #007bff;
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#closeButton {
+    color: red;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#closeButton:hover {
+    text-decoration: underline;
+}
+
+form {
+    margin: 20px 0;
 }
 
 label {
@@ -63,14 +83,14 @@ button {
     width: 120px;
     font-size: 16px;
     font-weight: bold;
-    margin-left: calc(50% - 60px); 
+    margin-left: calc(50% - 60px);
     margin-top: 10px;
 }
 
 button:hover {
     background-color: #0056b3;
 }
-/* Add this style to your existing CSS or create a new CSS file */
+
 .result-message {
     margin-top: 15px;
     text-align: center;
@@ -85,8 +105,6 @@ button:hover {
     color: red;
 }
 
-
-/* Responsive adjustments */
 @media (max-width: 600px) {
     .container {
         width: 90%;

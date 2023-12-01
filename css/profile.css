@@ -1,4 +1,3 @@
-/* Add your existing CSS styles here */
 
 .container {
     max-width: 800px;
@@ -24,23 +23,20 @@ span {
 }
 
 
-/* Reset some default styles */
 body, h2, label, span {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-/* Apply a background color to the body */
 body {
     background-color: #f4f4f4;
     font-family: 'Arial', sans-serif;
 }
 
-/* Style the header */
 header {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #fff;
+    color: #09d15e;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -48,27 +44,23 @@ header {
     border-radius: 5px 5px 0 0;
 }
 
-/* Style the header h2 */
 header h2 {
     margin: 0;
 }
 
-/* Style the logout button */
 header button {
     background-color: #fff;
-    color: #007bff;
+    color: #09d15e;
     padding: 8px;
-    border: 1px solid #007bff;
-    border-radius: 5px;
     cursor: pointer;
+    border: none;
 }
 
 header button:hover {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #e6e8e9;
+    border-radius: 30px;
 }
 
-/* Center the container horizontally */
 .container {
     max-width: 800px;
     margin: 50px auto;
@@ -79,7 +71,6 @@ header button:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Style the profile items */
 .container div {
     display: flex;
     justify-content: space-between;
@@ -88,24 +79,18 @@ header button:hover {
     padding: 10px;
 }
 
-/* Style the labels */
 label {
-    color: #007bff;
+    color: #090909;
     font-weight: bold;
     margin-right: 10px;
 }
 
-/* Style the spans */
 span {
     flex: 1;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
     .container {
         padding: 10px;
     }
 }
-
-/* Additional styles based on your design preferences */
-/* Feel free to modify or add styles according to your needs */

@@ -1,4 +1,3 @@
-/* Reset some default styles */
 body,
 h1,
 h2,
@@ -10,35 +9,49 @@ input {
     border: 0;
 }
 
-/* Apply a background color to the body */
 body {
     background-color: #f4f4f4;
     font-family: 'Arial', sans-serif;
 }
-
-/* Center the container horizontally */
 .container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Style the image */
-img {
-    max-width: 100%;
-    height: auto;
     margin-top: 20px;
 }
 
-/* Additional styles for the header */
-header {
-    background-color: rgb(241, 186, 66);
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col-md-6 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.col-md-6:nth-child(1) {
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #1f7fe7;
     color: #fff;
-    padding: 10px;
+    border: none;
+    margin: 200px;
+    font-size: 40px;
+    padding: 20px 50px;
+    border-radius: 60px;
+    width:420px;
+}
+
+.btn-primary:hover {
+    background-color: #09d15e;
+}
+
+header {
+    background-color: #fff;
+    color: #09d15e;
+    padding: 10px 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,24 +67,23 @@ header a:hover {
 header h2 {
     margin: 20px;
     font-size: 24px;
-    color: #0f0f0f;
+    color: #0dba4b;
 }
 header button {
-    color: #0e0e0f;
+    color: #09d15e;
     background-color: transparent;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
     transition: background-color 0.3s, color 0.3s;
-    padding: 10px 15px;
-    border: 2px solid #0f0f0f;
+    padding: 10px 10px;
+    border: none;
     border-radius: 23px;
     cursor: pointer;
-    margin: 0 10px;
 }
 
 header button:hover {
-    background-color: rgb(250, 236, 197);
+    color: #098d2a;
 }
 
 
